@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+#quote-box,
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 65px auto 10px auto;
+	background-color: white;
+	width: 54vw;
+	height: auto;
+	border-radius: 5px;
+}
+
+.quote-icon {
+	vertical-align: super;
+}
+
+#text {
+	text-align: center;
+	margin: 25px 50px;
+	font-size: 2vw;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+.btn {
+	margin: 15px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#author {
+	font-size: 1.5vw;
+}
+
+footer {
+	margin-bottom: 25px;
+	font-size: 1.5em;
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+footer h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+footer p {
+	margin-top: 12px;
+	font-size: 1.2rem;
+}
+
+footer a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.25em;
+}
+
+/*** Mobile responsive ***/
+@media only screen and (max-width: 768px) {
+	#quote-box,
+	footer {
+		width: 95vw;
+	}
+
+	#text {
+		font-size: 4vw;
+	}
+
+	#author {
+		font-size: 3vw;
+	}
+}
+
+@media only screen and (max-width: 338px) {
+	.span {
+		display: none;
+	}
+
+	.btn {
+		display: block;
+		margin: 10px auto;
+	}
+}
